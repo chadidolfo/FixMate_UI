@@ -1,0 +1,58 @@
+@import "../colors/colors.scss" ;
+
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: $background-app; /* Optional: sets a light background color */
+
+}
+
+.parent {
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Takes full width of the page */
+  margin-top: -50px;
+
+  
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+
+
+}
+
+.child {
+  background-color: #ffffff; /* Optional: sets a white background for the form */
+  padding: 20px; /* Adds some padding for spacing */
+  border-radius: 8px; /* Optional: rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  max-width: 500px; /* Sets a maximum width for the form */
+  width: 100%; /* Ensures the form is responsive */
+  display: inline-block;
+  margin-top: auto;
+
+
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; 
+}
