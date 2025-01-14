@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { AuthService } from '../../services/auth/auth.service';
 import {AbstractControl,NonNullableFormBuilder, ReactiveFormsModule,ValidationErrors,} from '@angular/forms';
@@ -12,7 +12,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';;
 @Component({
   selector: 'app-sign-up-client',
   standalone: true,
-  imports: [ReactiveFormsModule, NzButtonModule, NzFormModule, NzInputModule],
+  imports: [ReactiveFormsModule, NzButtonModule, NzFormModule, NzInputModule,RouterModule],
   templateUrl: './sign-up-client.component.html',
   styleUrl: './sign-up-client.component.scss'
 })

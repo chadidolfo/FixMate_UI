@@ -54,6 +54,16 @@
               </ng-template>
             </nz-form-control>
           </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label [nzSpan]="7" >Phone</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+              
+              <input nz-input formControlName="phone" placeholder="not required" />
+              
+            </nz-form-control>
+          </nz-form-item>
+
           <nz-form-item>
             <nz-form-label [nzSpan]="7" nzRequired>Password</nz-form-label>
             <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please input your password!">

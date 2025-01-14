@@ -36,6 +36,16 @@
             </ng-template>
           </nz-form-control>
         </nz-form-item>
+        
+        <nz-form-item>
+          <nz-form-label [nzSpan]="7" >Phone</nz-form-label>
+          <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+            
+            <input nz-input formControlName="phone" placeholder="not required" />
+            
+          </nz-form-control>
+        </nz-form-item>
+
         <nz-form-item>
           <nz-form-label [nzSpan]="7" nzRequired>E-mail</nz-form-label>
           <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
@@ -76,7 +86,8 @@
             <button nz-button nzType="primary" >Submit</button>
           </nz-form-control>
         </nz-form-item>
-        <label> Already have an account? <br> <a routerLink="/login">login now</a></label>
+        <label> Already have an account? <br><a nz-button nzType="link" routerLink="/login" routerLinkActive="active">login now</a>
+        </label>
       </form>
 
     </div>

@@ -6,7 +6,6 @@
   align-items: center;
   height: 100vh; /* Full viewport height */
   background-color: $background-app; /* Optional: sets a light background color */
-
 }
 
 .parent {
@@ -14,9 +13,9 @@
   justify-content: center;
   align-items: center;
   width: 100%; /* Takes full width of the page */
-  margin-top: -50px;
-
+  margin-top: -60px;
   
+
 }
 
 h1{
@@ -30,7 +29,7 @@ h1{
 }
 
 .child {
-  background-color: #ffffff; /* Optional: sets a white background for the form */
+  background-color: $background-app; /* Optional: sets a white background for the form */
   padding: 20px; /* Adds some padding for spacing */
   border-radius: 8px; /* Optional: rounds the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
@@ -38,7 +37,6 @@ h1{
   width: 100%; /* Ensures the form is responsive */
   display: inline-block;
   margin-top: auto;
-
 
 }
 button{

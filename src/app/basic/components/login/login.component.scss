@@ -1,0 +1,78 @@
+@import "../colors/colors.scss" ;
+
+
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: $background-app; /* Optional: sets a light background color */
+
+}
+
+.parent {
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Takes full width of the page */
+  margin-top: -70px;
+}
+.login-container {
+  background-color: $background-app; 
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  border-radius: 8px; /* Optional: rounds the corners */
+
+}
+  
+.child {
+  background-color: $background-app; 
+  padding: 20px; /* Adds some padding for spacing */
+  border-radius: 8px; /* Optional: rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  max-width: 500px; /* Sets a maximum width for the form */
+  width: 50%; /* Ensures the form is responsive */
+  display: inline-block;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+}
+  
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+  
+  
+  }
+  
+  button{
+     
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    width: 50%;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+  }
+  
+  button:hover::shadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  } 
+  label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+  }
+ 
+  
